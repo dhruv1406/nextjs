@@ -1,5 +1,5 @@
 export default {
     // NextAuth.js configuration options...
-    secret: '5JrYmYBl8OabUUf7',
+    secret: '2qPmKpZ8vT1rXs5u8x/A?D(G+KbPeShV',
   };
   
