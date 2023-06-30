@@ -1,4 +1,3 @@
-"use client";
 import { RiDeleteBin6Line } from 'react-icons/ri'
 import { useRouter } from 'next/navigation';
 
