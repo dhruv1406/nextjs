@@ -3,7 +3,7 @@ import EditVendor from '@/app/components/EditVendor'
 
 const getVendorById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/vendors/${id}`, {
+    const res = await fetch(`https://nextjs-six-blond-93.vercel.app/api/vendors/${id}`, {
       cache: "no-store",
     });
 
