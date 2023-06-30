@@ -25,7 +25,7 @@ const Vendors = async () => {
   return (
     <>
     {vendors.map(v => (
-        <div className="container mt-3 ">
+        <div key={v._id} className="container mt-3 ">
             <div className="border border-dark d-flex justify-content-between p-2">
                 <div className=''>
                   <ul className='list-group list-group-flush'>
