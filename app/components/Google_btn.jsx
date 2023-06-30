@@ -2,6 +2,7 @@
 import style from '../styles/signup.module.css'
 import {useSession, signIn, signOut} from 'next-auth/react'
 import { useRouter } from 'next/navigation';  
+import { FcGoogle } from 'react-icons/fc'
 
 const Google_btn = () => {
   const {data : session } = useSession();
@@ -34,7 +35,7 @@ const Google_btn = () => {
     className={style.google_btn}
     onClick={handleLogin}
     >
-        <img src="images/google.svg" alt="google icon" className={style.google_logo}/>
+    <FcGoogle height={50}/>
         Continue with Google
       </button>
     );
