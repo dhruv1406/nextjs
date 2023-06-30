@@ -1,20 +1,20 @@
 import { RiDeleteBin6Line } from 'react-icons/ri'
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 
 
-const DeleteBtn = ({ id }) => {
+const DeleteBtn = ({ id, onDelete }) => {
 
-  const router = useRouter();
+  // const router = useRouter();
 
   const removeVendor = async () => {
     const confirmed = confirm('Are You Sure?');
 
     if(confirmed){
-      const res = await fetch(`http://localhost:3000/api/vendors?id=${id}`,{
+      const res = await fetch(`/api/vendors?id=${id}`,{
         method: "DELETE", 
       });
       if(res.ok){
-        router.refresh();
+        onDelete(id);
       }
     }
   };

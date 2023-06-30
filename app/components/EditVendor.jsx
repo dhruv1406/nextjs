@@ -19,7 +19,7 @@ const EditVendor = ({id, name, bankName, bankNum, address1, address2, city, coun
         e.preventDefault();
 
         try {
-            const res = await fetch(`http://localhost:3000/api/vendors/${id}`, {
+            const res = await fetch(`/api/vendors/${id}`, {
                 method: "PUT",
                 headers: {
                     "content-type" : "application/json",
