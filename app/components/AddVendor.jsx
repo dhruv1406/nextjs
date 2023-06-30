@@ -25,7 +25,7 @@ const handleSubmit = async (e) => {
     }
 
     try {
-      const res =  await fetch('http://localhost:3000/api/vendors', {
+      const res =  await fetch('/api/vendors', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
