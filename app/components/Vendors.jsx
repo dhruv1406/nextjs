@@ -5,7 +5,7 @@ import DeleteBtn from './DeleteBtn';
 
 const getVendors = async () => {
   try {
-    const res = await fetch('http://localhost:3000/api/vendors', {
+    const res = await fetch('/api/vendors', {
       cache: 'no-store',
     });
 
